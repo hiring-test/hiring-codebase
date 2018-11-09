@@ -1,9 +1,9 @@
 /**
  * Created by 502415898 on 7/17/2015.
  */
-var app = angular.module('eFMEAapp');
+var app = angular.module('newHire');
 
-app.factory('riskAnalysisService', ['$http','$q', function($http, $q) {
+app.factory('employeeService', ['$http','$q', function($http, $q) {
 	//get all analyses associated to SSO
    	var getEmployeess = function(){
     	return $http({
@@ -16,15 +16,15 @@ app.factory('riskAnalysisService', ['$http','$q', function($http, $q) {
    	var saveEmployee = function(request){
     return $http({
 	      method: 'POST',
-	      url: 'http://usmkeffalod31.od.health.ge.com:8000/hire/employee/'
-        data: request
+	      url: 'http://usmkeffalod31.od.health.ge.com:8000/hire/employee/',
+        data: request,   
+        'Content-Type': "aaplication/json"
+
 	    });
    	}
 
-
-
    	return {
-    	getMyRiskAnalyses : getMyRiskAnalyses,
+    	getEmployeess : getEmployeess,
     	saveEmployee: saveEmployee
    	}
 }]);

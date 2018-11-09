@@ -1,3 +1,1 @@
-var app = angular.module('newHire', ['']);
-
-});
+var app = angular.module('newHire', []);
