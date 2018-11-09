@@ -1,0 +1,6 @@
+UI TEST
+
+1. Implement the below scenarios in AngularJS at \Desktop\questions\UI\project1. Mockups can be found in \Desktop\questions\UI\mock-ups. Use Sublime as your IDE.
+	a. As a user, I want to enter and save information about an employee.
+	b. As a user, I want to view information about all my employees.
+2. Given the application in \Desktop\questions\UI\project2, please fix the code so that scenario 1.a works as expected.
