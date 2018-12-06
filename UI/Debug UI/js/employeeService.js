@@ -1,25 +1,22 @@
-/**
- * Created by 502415898 on 7/17/2015.
- */
 var app = angular.module('newHire');
 
 app.factory('employeeService', ['$http','$q', function($http, $q) {
-	//get all analyses associated to SSO
    	var getEmployeess = function(){
     	return $http({
 	      method: 'GET',
-	      url: 'http://usmkeffalod31.od.health.ge.com:8000/hire/employee/'
+	      url: 'http://localhost:8080/hire/employee'
 	    });
    	}
 
-   	//Get FMEAs for a specific App
    	var saveEmployee = function(request){
     return $http({
-	      method: 'POST',
-	      url: 'http://usmkeffalod31.od.health.ge.com:8000/hire/employee/',
-        data: request,   
-        'Content-Type': "aaplication/json"
-
+	    method: 'POST',
+	    url: 'http://localhost:8080/hire/employee',
+		  data: request,   
+        headers: {
+          "Accept": 'text/plain',
+          "Content-Type": 'application/json'
+		    }
 	    });
    	}
 
