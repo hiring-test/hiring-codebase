@@ -15,6 +15,16 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     </head>
     <body ng-app="newHire" ng-controller="employeeController">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="alert alert-danger" ng-show="saveSuccessful === false">
+                  Unable to save form.
+                </div>
+                <div class="alert alert-success" ng-show="saveSuccessful">
+                  Employee details saved successfully!
+                </div>
+            </div>
+        </div>
         <form class="col-md-4">
             <div class="form-group">
                 <label>First Name</label>

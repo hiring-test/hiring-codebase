@@ -4,7 +4,11 @@ UI TEST
 	a. As a user, I want to enter and save information about an employee.
 	b. As a user, I want to view information about all my employees.
 
-URL Endpoint For 1.a:
-URL Endpoint For 1.b: 
+URL Endpoints For #1 
+	GET: http://localhost:8080/hire/employee
+	POST: http://localhost:8080/hire/employee
+		Sample Request: {"firstName":"XYZ","lastName":"ABC","age":"54","gender":"Male","address":"6883 S Ivy Way"}
 
-2. Given the application in \Desktop\questions\UI\project2, please fix the code so that scenario 1.a works as expected.
+2. Given the application in \Desktop\questions\UI\project2, please troubleshoot and correct the code so that the scenario from 1.a works with the below requirements
+	A message should display to let the user know when they sucessfully saved their form.
+	A message should display to let the user know when they failed to save their form. 
