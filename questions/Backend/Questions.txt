@@ -2,8 +2,10 @@ BACKEND DEVELOPER TEST
 
 1. Use any version control tool to pull the code from here https://github.com/hiring-test/hiring-codebase
 2. Use STS and write a Spring Boot application.
-   - Write a Sprint boot service to save form details into a file.(Refer mockups)
-3. Deploy service in tomcat
-4. Pull code from here https://github.com/hiring-test/hiring-codebase and perform code review.
+   - Write a Sprint boot service to save form details into a file.(Refer mockups - C:\Users\Administrator\Desktop\hiring-codebase\questions\UI\mock-ups\SaveDataForm)
+3. Deploy service in tomcat and test it with any rest client tools (Postman, Rest Client or Swagger)
+4. Pull code from here (https://github.com/hiring-test/hiring-codebase/blob/master/back-end/MyInterview.java)
+	a. Execute the above program in STS, resolve errors if any.
+	b. Suggest improvements if any.
 
 
